@@ -1,0 +1,48 @@
+# book_app
+
+Project Overview
+This Flutter project was developed as part of the Nagwa Flutter Developer Technical Test.
+The application fetches and displays a list of books using the Gutendex API in a clean, structured, and scalable manner.
+Clone the repository:
+bash
+git clone https://github.com/muhammedsameh7788/book-app-nagwa
+
+Get dependencies:
+bash
+flutter pub get
+
+Run the app:
+Make sure a device/emulator is running.
+bash
+flutter run --flavor production 
+flutter run --flavor development
+
+
+features
+Fetch book list from Gutendex API.
+
+Display book title and author(s).
+
+Handle loading, empty, and error states.
+
+Flavor support (dev/staging/prod).
+
+Clean, maintainable codebase.
+
+
+lib/
+├── core/           # App-wide constants, helpers
+├── data/           # Repositories, API Services
+├── domain/         # Entities and use cases
+├── presentation/   # UI and Cubits
+│   ├── screens/
+│   └── cubit/
+├── main_development.dart 
+└── main_production.dart
+
+Notes
+Project built with Flutter stable  3.29.3 
+
+All configurations follow clean code principles.
+
+App supports multiple build environments using flavors
