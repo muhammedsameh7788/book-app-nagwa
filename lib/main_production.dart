@@ -16,13 +16,13 @@ class BookApp extends StatelessWidget {
   const BookApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context ) {
     return MaterialApp(
       title: 'Book Listing App',
       theme: AppTheme.lightTheme,
       home: BlocProvider(
         create: (_) => getIt<BookCubit>()..fetchBooks(),
-        child:  BookListPage(flavor: 'book app ',),
+        child:  BookListPage(flavor: 'book app'),
       ),
     );
   }
