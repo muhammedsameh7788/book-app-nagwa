@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../core/utils/constant_manager.dart';
 import '../../flavors.dart';
 import '../cubit/book_cubit.dart';
 import 'widgets/book_item.dart';
@@ -44,7 +45,9 @@ class _BookListPageState extends State<BookListPage> {
 
     return Scaffold(
 
-      appBar: AppBar(title:  Text(Flavors.appBarText() )),
+      appBar: AppBar(
+          backgroundColor: AppConstants.primaryColor,
+          title:  Text( AppConstants.appBarText )),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
