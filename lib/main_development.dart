@@ -22,7 +22,7 @@ class BookApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       home: BlocProvider(
         create: (_) => getIt<BookCubit>()..fetchBooks(),
-        child: const BookListPage(),
+        child:  BookListPage(flavor: 'book app (d)',),
       ),
     );
   }

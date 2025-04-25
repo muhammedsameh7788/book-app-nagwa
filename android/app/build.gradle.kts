@@ -38,9 +38,30 @@ android {
         }
     }
 
+    flavorDimensions += "default"
+    productFlavors {
+        create("development") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "book (d)"
+            )
+            applicationIdSuffix = ".dev"
+        }
+        create("production") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "book app"
+            )
 
-}
+        }
+    }
 
-flutter {
-    source = "../.."
+    flutter {
+        source = "../.."
+    }
+
 }
