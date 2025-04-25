@@ -1,3 +1,4 @@
+import 'package:book_app/core/utils/constant_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../domain/entity/book.dart';
@@ -28,7 +29,7 @@ class _BookItemState extends State<BookItem> {
 
     final showSeeMore = textPainter.didExceedMaxLines;
     return Card(
-      color: Theme.of(context).cardColor,
+      color: AppConstants.cardColor,
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
