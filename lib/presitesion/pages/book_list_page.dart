@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../flavors.dart';
 import '../cubit/book_cubit.dart';
 import 'widgets/book_item.dart';
 
@@ -40,8 +41,10 @@ class _BookListPageState extends State<BookListPage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(title:  Text(widget.flavor)),
+
+      appBar: AppBar(title:  Text(Flavors.appBarText() )),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
