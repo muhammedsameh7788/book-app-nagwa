@@ -37,13 +37,8 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
-    flavorDimensions = "default"
-    productFlavors {
-        ptoduction {
-            dimension = "default"
-            applicationIdSuffix = ".staging"
-        }
-    }
+
+
 }
 
 flutter {
