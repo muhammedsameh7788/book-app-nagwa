@@ -4,8 +4,8 @@ import '../cubit/book_cubit.dart';
 import 'widgets/book_item.dart';
 
 class BookListPage extends StatefulWidget {
-  const BookListPage({super.key});
-
+   BookListPage({super.key , required this.flavor});
+  String flavor ;
   @override
   State<BookListPage> createState() => _BookListPageState();
 }
@@ -41,7 +41,7 @@ class _BookListPageState extends State<BookListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Books')),
+      appBar: AppBar(title:  Text(widget.flavor)),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
